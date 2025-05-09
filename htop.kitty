@@ -1,0 +1,13 @@
+# ntop_btop.kitty - Kitty Session Example
+
+# First tab: ntop
+new_tab ntop
+cd ~  # You can specify the working directory for ntop
+title ntop
+launch zsh -c 'sudo ntopng'  # Start ntop with the necessary command
+
+# Second tab: btop
+new_tab btop
+cd ~  # You can specify the working directory for btop
+title btop
+launch zsh -c 'btop'  # Start btop in the second tab

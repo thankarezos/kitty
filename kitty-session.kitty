@@ -1,0 +1,20 @@
+# htop_btop.kitty - Kitty Session with htop and btop
+
+# First window: Run htop
+window:
+    layout: default  # Default layout
+    cwd: ~  # Set the working directory to home
+    command: bash
+    tabs:
+        - title: "htop"
+          command: bash -c 'htop'  # Launch htop in the first window
+
+# Second window: Run btop
+window:
+    layout: default  # Default layout
+    cwd: ~  # Set the working directory to home
+    command: bash
+    tabs:
+        - title: "btop"
+          command: bash -c 'btop'  # Launch btop in the second window
+
